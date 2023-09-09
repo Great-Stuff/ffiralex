@@ -56,17 +56,18 @@ a{
 .title{
     text-align: center;
 }
+.image-wrapper{
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
 .nyuTorch{
-    position: absolute;
     height: 50px;
-    right: 0;
     padding: 15px;
     filter: invert(100);
 }
 .logo{
-    position: absolute;
     height: 50px;
-    left: 0rem;
     padding: 15px;
     filter: invert(100);
 }
@@ -75,7 +76,7 @@ a{
     background-color: #ab82c5;
 }
 .page-title{
-    font-size: 100px;
+    font-size: 75px;
 }
 .page-content{
     margin: 0px 25% 0px 25%;
@@ -128,12 +129,6 @@ a{
     }
 
     @media screen and (max-width: 425px){
-        .logo{
-            display: none;
-        }
-        .nyuTorch{
-            display: none;
-        }
         .past-flyer-grid{
             grid-template-columns: repeat(1, 1fr);
         }
