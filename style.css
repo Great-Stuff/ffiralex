@@ -16,26 +16,42 @@ body{
     font-family: "Bitter", Georgia, 'Times New Roman', Times, serif;
 }
 header{
-    background-color: #97BFF0;
-    padding: 10px;
+    padding: 100px;
+    text-shadow: black 0px 0px 10px;
+    position: relative;
+    color: white;
 }
 footer{
-    background-color: #97BFF0;
+    background-color: #ab82c5;
     padding: 5px;
     text-align: center;
 }
 nav{
     text-align: center;
     padding: 3px;
-    background-color: #97BFF0;
-    border-top: solid 1px black;
-    border-bottom: solid 1px black;
+}
+.nav-item{
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 500;
+    text-shadow: black 0px 0px 10px;
 }
 a{
     color: black;
     text-decoration: underline;
     cursor: pointer;
     font-weight: 500;
+}
+.cover-image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: brightness(50%);
+    object-fit: cover;
 }
 .title{
     text-align: center;
@@ -45,16 +61,18 @@ a{
     height: 50px;
     right: 0;
     padding: 15px;
+    filter: invert(100);
 }
 .logo{
     position: absolute;
     height: 50px;
     left: 0rem;
     padding: 15px;
+    filter: invert(100);
 }
 .page-header{
     padding: 10px;
-    background-color: #87ABD6;
+    background-color: #ab82c5;
 }
 .page-title{
     font-size: 100px;
@@ -125,11 +143,7 @@ a{
         .rsvp-flyer{
             width: 100%;
         }
-        .nav-bar{
-            color: #97BFF0;
-        }
         .nav-item{
-            color: black;
             display: block;
             width: 100vw;
         }
